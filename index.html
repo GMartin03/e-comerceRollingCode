@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-Comerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="headerContainer">
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"
+            ><img
+              src="./logo/c&vincl.png"
+              alt="logo"
+              height="80px"
+              padding="2rem"
+            />Menu Principal</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <div class="loginContainer">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="./pages/indexLogin.html"
+                    >Quienes somos?</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="contactoContainer">
+                  <a class="nav-link text-light" href="./pages/indexContac.html"
+                    >Login</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="que buscas"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">Busqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contenedorMain">
+        <div class="barraLateralLg">
+          <div class="linksArticulos">
+            <h2>Categorias</h2>
+            <ul>
+              <li><a href="./pages/celulares.html">Celulares</a></li>
+              <li><a href="./pages/televisores.html">Televisores</a></li>
+              <li>
+                <a href="./pages/electrodomesticos.html">Electrodomesticos</a>
+              </li>
+              <li><a href="">Aires acondicionados</a></li>
+              <li><a href="">Notebooks y PCs</a></li>
+              <li><a href="">Herramientas</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="barraLateral">
+          <button
+            class="botonLateral btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <p>PRODUCTOS</p>
+          </button>
+
+          <div
+            class="alt offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                PRODUCTOS
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="lateral bg-primary offcanvas-body">
+              <div class="linksArticulos">
+                <h2>Categorias</h2>
+                <ul>
+                  <li><a href="./pages/celulares.html">Celulares</a></li>
+                  <li><a href="./pages/televisores.html">Televisores</a></li>
+                  <li>
+                    <a href="./pages/electrodomesticos.html"
+                      >Electrodomesticos</a
+                    >
+                  </li>
+                  <li><a href="">Aires acondicionados</a></li>
+                  <li><a href="">Notebooks y PCs</a></li>
+                  <li><a href="">Herramientas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="productos">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/celulares4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/celulares3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="./img/electro3.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/galaxy s22.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Samsung S22</h5>
+                  <p class="card-text">
+                    Celular. Pantalla 6.1" Dynamic AMOLED 2X.
+                  </p>
+                  <h6>PRECIO $150.000</h6>
+
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/galaxy z.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Z</h5>
+                  <p class="card-text">
+                    Celular de 6.7" FHD+ Dynamic Amoled 2x.
+                  </p>
+                  <h6>PRECIO $147.125</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/galaxynote.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy note</h5>
+                  <p class="card-text">
+                    El Samsung Galaxy Note 10+ marca la décima generación de la
+                    serie flagship de Samsung
+                  </p>
+                  <h6>PRECIO $123.989</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/samsung a33.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Samsung A33</h5>
+                  <p class="card-text">
+                    Celular 5G de 6.4" FHD+ (1080 x 2408) Super Amoled.
+                  </p>
+                  <h6>PRECIO $79.200</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/iphone 11.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Iphone 11</h5>
+                  <p class="card-text">
+                    La pantalla del iPhone 11 tiene esquinas redondeadas.
+                  </p>
+                  <h6>PRECIO $239.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/iphone 13.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Iphone 13</h5>
+                  <p class="card-text">
+                    Pantalla de 6.1 pulgadas, Super Retina XDR Display.
+                  </p>
+                  <h6>PRECIO $980.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/Motorola edge 20 pro.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Motorola Edge 20</h5>
+                  <p class="card-text">
+                    Celular. Pantalla 6.67 " qOLED FHD+. Procesador: Octa Core
+                    2.0 Ghz. Camara: Principal: 108 MP
+                  </p>
+                  <h6>PRECIO $80.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/motorola g52.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Motorola g52</h5>
+                  <p class="card-text">
+                    Celular de 6.55" OLED. Procesador Qualcomm Snapdragon 680,
+                    Octa core, 2.4GHz.
+                  </p>
+                  <h6>PRECIO $62.500</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    HELADERA NO FROST SAMSUNG RT43K6235BS NEGRO
+                  </h5>
+                  <p class="card-text">
+                    Solo Twin Cooling Plus™ crea un entorno favorable para
+                    preservar los alimentos.
+                  </p>
+                  <h6>PRECIO $405.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    HELADERA NO FROST SAMSUNG RT325070S8 GRIS
+                  </h5>
+                  <p class="card-text">
+                    No Frost. Capacidad 321 lts. Freezer superior. Tecnologia
+                    Twin Cooling Plus.
+                  </p>
+                  <h6>PRECIO $171.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    LAVARROPAS AUTOMATICO DREAN NEXT 6.06 ECO 6 BLANCO
+                  </h5>
+                  <p class="card-text">
+                    Clase AA. Cap.6 Kg. Display Led. Carga Autoadaptativa.
+                    Sist.Autobalance. 29 Alternativas de lavado.
+                  </p>
+                  <h6>PRECIO $82.529</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    LAVARROPAS AUTOMATICO SAMSUNG WW70M0NHUU 7 PLATEADO
+                  </h5>
+                  <p class="card-text">
+                    El exclusivo diseño Tambor Diamante es sumamente amable con
+                    tu ropa, al permitir un deslizamiento delicado.
+                  </p>
+                  <h6>PRECIO $119.236</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">MICROONDAS SAMSUNG MG28S</h5>
+                  <p class="card-text">
+                    Nuestro exclusivo sistema de triple distribución TDS,
+                    asegura que todos los alimentos se calienten o descongelen
+                    de manera homogénea.
+                  </p>
+                  <h6>PRECIO $52.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/electro6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CAFETERA PHILIPS HD7462/20</h5>
+                  <p class="card-text">
+                    Disfrute el sabor y el aroma del café recién preparado con
+                    esta confiable cafetera
+                  </p>
+                  <h6>PRECIO $11.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/Samsungtele1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Smart Samsung 50 pulgadas</h5>
+                  <p class="card-text">
+                    Smart TV de 50", 4K, Widescreen. Frecuencia de barrido 60Hz.
+                  </p>
+                  <h6>PRECIO $115.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/samsungtele2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SMART TV SAMSUNG 43 PULGADAS</h5>
+                  <p class="card-text">
+                    Smart TV LED 43" FHD 1920 x 1080. Clean View. Wide Color
+                    Enhancer. Wi-Fi integ. SO tizen. Dolby Digital
+                  </p>
+                  <h6>PRECIO $97.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/samsungtele3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    SMART TV SAMSUNG QLED 55 PULGADAS 4K UHD
+                  </h5>
+                  <p class="card-text">
+                    La tecnología de punto cuántico brinda nuestra mejor imagen
+                    jamás vista.
+                  </p>
+                  <h6>PRECIO $245.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/hitachitele4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ANDROID SMART TV HITACHI 40 PULGADAS
+                  </h5>
+                  <p class="card-text">
+                    Tv Smart Andriod de 40" FHD (1920x1080) Frecuencia de
+                    barrido 60Hz.
+                  </p>
+                  <h6>PRECIO $92.500</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/noblextele5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ANDROID SMART TV TCL 40 PULGADAS FULL HD
+                  </h5>
+                  <p class="card-text">
+                    Televisor. Pantalla: 40" FULL HD. LED. Android TV.
+                  </p>
+                  <h6>PRECIO $99.500</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/TLC6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ANDROID SMART TV TCL QLED 55 PULGADAS 4K
+                  </h5>
+                  <p class="card-text">
+                    Qled 55" Smart 4K UHD con tecnologia Quantum Dot. HDR 4X.
+                    Dolby Vision. Resolucion 3840 x 2160.
+                  </p>
+                  <h6>PRECIO $127.000</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 p-3 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.facebook.com" target="_blank">Facebook</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.instagram.com" target="_blank">Instagram</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.youtube.com" target="_blank">YouTube</a>
+          </div>
+        </div>
+
+        <div class="horizontalLine"></div>
+
+        <div class="col-md-6 col-lg-4 p-3 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a target="_blank">Contactos</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <p><strong>Nro. de Telefono:</strong> xxx xxx-xxxx</p>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Trabaja con nosotros</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Terminos y condiciones</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Como cuidamos tu privacidad</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-3 smMdNone footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Trabaja con nosotros</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Terminos y condiciones</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Como cuidamos tu privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
