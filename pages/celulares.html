@@ -1,348 +1,523 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Celulares</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Celulares</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style/style.css">
-
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-primary">
-      <div class="container-fluid">
-        <img src="../img/logo.jpg" alt="" width="50" height="40" class="d-inline-block align-text-top">
-        <a class="marca navbar-brand" href="#">COMPRA Y VENTA</a>
-        <button class="botonCollapso navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="listaLinks navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex justify-content-center" role="search">
-            <button class="boton btn btn-outline-secondary" type="submit"><b>agregar transaccion</b></button>
-          </form>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"
+            ><img
+              src="../logo/c&vincl.png"
+              alt="logo"
+              height="80px"
+              padding="2rem"
+            />Menu Principal</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <div class="loginContainer">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="./pages/indexContact.html"
+                    >Sobre nosotros</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="contactoContainer">
+                  <a class="nav-link text-light" href="./pages/indexLogin.html"
+                    >Iniciar sesion</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar productos"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-
-  </header>
-  <main>
-    <div class="contenedorMain d-flex justify-content-between">
-
-
-
-      <div class="barraLateralLg">
-
-
-
-
-        <h3><a class="inicio" href="../index.html">INICIO</a></h3>
-        <div class="linksArticulos">
-          <h2>Categorias</h2>
-          <ul>
-            <li>
-              <p>Celulares</p>
-            </li>
-            <li><a href="./televisores.html">Televisores</a></li>
-            <li><a href="./electrodomesticos.html">Electrodomesticos</a></li>
-            <li><a href="">Aires acondicionados</a></li>
-            <li><a href="">Notebooks y PCs</a></li>
-            <li><a href="">Herramientas</a></li>
-          </ul>
-        </div>
-        <form>
-          <div class="marcas d-flex flex-column">
-            <h3>Marcas</h3>
-            <div>
-              <input type="checkbox" id="sansung">
-              <a href="./samsung.html">Samsung</a>
-            </div>
-            <div>
-              <input type="checkbox">
-              <a href="./iphone.html">Iphone</a>
-            </div>
-            <div>
-              <input type="checkbox">
-              <a href="./motorola.html">Motorola</a>
-            </div>
-
-
+      </nav>
+    </header>
+    <main>
+      <div class="contenedorMain d-flex justify-content-between">
+        <div class="barraLateralLg">
+          <h3><a class="inicio" href="../index.html">INICIO</a></h3>
+          <div class="linksArticulos">
+            <h2>Categorias</h2>
+            <ul>
+              <li>
+                <p>Celulares</p>
+              </li>
+              <li><a href="./televisores.html">Televisores</a></li>
+              <li><a href="./electrodomesticos.html">Electrodomesticos</a></li>
+              <li><a href="">Aires acondicionados</a></li>
+              <li><a href="">Notebooks y PCs</a></li>
+              <li><a href="">Herramientas</a></li>
+            </ul>
           </div>
-          <div class="marcas mt-3 d-flex flex-column">
-            <h3>Formas de pago</h3>
-            <div>
-              <input type="checkbox" id="seis">
-              <a href="./seisCelulares.html">6 cuotas</a>
-            </div>
-            <div>
-              <input type="checkbox">
-              <a href="./doceCelulares.html">12 cuotas</a>
-            </div>
-          </div>
-          <div class="d-flex mt-5 justify-content-end" role="search">
-            <button class="btn btn-secondary" type="submit">Filtrar</button>
-          </div>
-        </form>
-      </div>
-
-
-
-
-
-      <div class="barraLateral">
-        <button class="botonLateral btn btn-primary" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <p>PRODUCTOS</p>
-        </button>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h3 class="offcanvas-title" id="offcanvasExampleLabel">PRODUCTOS</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="lateral bg-primary offcanvas-body">
-            <h3><a href="../index.html">INICIO</a></h3>
-            <div class="linksArticulos">
-              <h2>Categorias</h2>
-              <ul>
-                <li>
-                  <p>Celulares</p>
-                </li>
-                <li><a href="./televisores.html">Televisores</a></li>
-                <li><a href="./electrodomesticos.html">Electrodomesticos</a></li>
-                <li><a href="">Aires acondicionados</a></li>
-                <li><a href="">Notebooks y PCs</a></li>
-                <li><a href="">Herramientas</a></li>
-              </ul>
-            </div>
+          <form>
             <div class="marcas d-flex flex-column">
               <h3>Marcas</h3>
               <div>
-                <input type="checkbox">
-                <a href="./samsung.html">Sansung</a>
+                <input type="checkbox" id="sansung" />
+                <a href="./samsung.html">Samsung</a>
               </div>
               <div>
-                <input type="checkbox">
+                <input type="checkbox" />
                 <a href="./iphone.html">Iphone</a>
               </div>
               <div>
-                <input type="checkbox">
+                <input type="checkbox" />
                 <a href="./motorola.html">Motorola</a>
               </div>
-
-
             </div>
             <div class="marcas mt-3 d-flex flex-column">
               <h3>Formas de pago</h3>
               <div>
-                <input type="checkbox">
-                <a href="">6 cuotas</a>
+                <input type="checkbox" id="seis" />
+                <a href="./seisCelulares.html">6 cuotas</a>
               </div>
               <div>
-                <input type="checkbox">
-                <a href="">12 cuotas</a>
+                <input type="checkbox" />
+                <a href="./doceCelulares.html">12 cuotas</a>
               </div>
             </div>
-            <form class="d-flex mt-5 justify-content-end" role="search">
+            <div class="d-flex mt-5 justify-content-end" role="search">
               <button class="btn btn-secondary" type="submit">Filtrar</button>
-            </form>
-
-          </div>
-
+            </div>
+          </form>
         </div>
-      </div>
 
-      <div class="productos">
-        <div class="row g-4">
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/galaxy s22.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Samsung S22</h5>
-                <p class="card-text">Celular. Pantalla 6.1" Dynamic AMOLED 2X.</p>
-                <h6>PRECIO $150.000</h6>
+        <div class="barraLateral">
+          <button
+            class="botonLateral btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <p>PRODUCTOS</p>
+          </button>
 
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
-              </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasExampleLabel">
+                PRODUCTOS
+              </h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/galaxy z.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Galaxy Z</h5>
-                <p class="card-text">Celular de 6.7" FHD+ Dynamic Amoled 2x.</p>
-                <h6>PRECIO $147.125</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
+            <div class="lateral bg-primary offcanvas-body">
+              <h3><a href="../index.html">INICIO</a></h3>
+              <div class="linksArticulos">
+                <h2>Categorias</h2>
+                <ul>
+                  <li>
+                    <p>Celulares</p>
+                  </li>
+                  <li><a href="./televisores.html">Televisores</a></li>
+                  <li>
+                    <a href="./electrodomesticos.html">Electrodomesticos</a>
+                  </li>
+                  <li><a href="">Aires acondicionados</a></li>
+                  <li><a href="">Notebooks y PCs</a></li>
+                  <li><a href="">Herramientas</a></li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/galaxynote.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Galaxy note</h5>
-                <p class="card-text">El Samsung Galaxy Note 10+ marca la décima generación de la serie flagship de
-                  Samsung</p>
-                <h6>PRECIO $123.989</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
+              <div class="marcas d-flex flex-column">
+                <h3>Marcas</h3>
+                <div>
+                  <input type="checkbox" />
+                  <a href="./samsung.html">Sansung</a>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <a href="./iphone.html">Iphone</a>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <a href="./motorola.html">Motorola</a>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/samsung a33.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Samsung A33</h5>
-                <p class="card-text">Celular 5G de 6.4" FHD+ (1080 x 2408) Super Amoled.</p>
-                <h6>PRECIO $79.200</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
+              <div class="marcas mt-3 d-flex flex-column">
+                <h3>Formas de pago</h3>
+                <div>
+                  <input type="checkbox" />
+                  <a href="">6 cuotas</a>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <a href="">12 cuotas</a>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/iphone 11.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Iphone 11</h5>
-                <p class="card-text">La pantalla del iPhone 11 tiene esquinas redondeadas.</p>
-                <h6>PRECIO $239.600</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/iphone 13.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Iphone 13</h5>
-                <p class="card-text">Pantalla de 6.1 pulgadas, Super Retina XDR Display.</p>
-                <h6>PRECIO $980.600</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/Motorola edge 20 pro.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Motorola Edge 20</h5>
-                <p class="card-text">Celular. Pantalla 6.67 " qOLED FHD+. Procesador: Octa Core 2.0 Ghz. Camara:
-                  Principal: 108 MP</p>
-                <h6>PRECIO $80.600</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-4 ">
-            <div class="card">
-              <img src="../img/motorola g52.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Motorola g52</h5>
-                <p class="card-text">Celular de 6.55" pOLED. Procesador Qualcomm Snapdragon 680, Octa core, 2.4GHz.</p>
-                <h6>PRECIO $62.500</h6>
-                <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                  </svg> Agregar
-                </button>
-              </div>
+              <form class="d-flex mt-5 justify-content-end" role="search">
+                <button class="btn btn-secondary" type="submit">Filtrar</button>
+              </form>
             </div>
           </div>
         </div>
+
+        <div class="productos">
+          <div class="row g-4">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/galaxy s22.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Samsung S22</h5>
+                  <p class="card-text">
+                    Celular. Pantalla 6.1" Dynamic AMOLED 2X.
+                  </p>
+                  <h6>PRECIO $150.000</h6>
+
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img src="../img/galaxy z.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Z</h5>
+                  <p class="card-text">
+                    Celular de 6.7" FHD+ Dynamic Amoled 2x.
+                  </p>
+                  <h6>PRECIO $147.125</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/galaxynote.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy note</h5>
+                  <p class="card-text">
+                    El Samsung Galaxy Note 10+ marca la décima generación de la
+                    serie flagship de Samsung
+                  </p>
+                  <h6>PRECIO $123.989</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/samsung a33.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Samsung A33</h5>
+                  <p class="card-text">
+                    Celular 5G de 6.4" FHD+ (1080 x 2408) Super Amoled.
+                  </p>
+                  <h6>PRECIO $79.200</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/iphone 11.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Iphone 11</h5>
+                  <p class="card-text">
+                    La pantalla del iPhone 11 tiene esquinas redondeadas.
+                  </p>
+                  <h6>PRECIO $239.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/iphone 13.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Iphone 13</h5>
+                  <p class="card-text">
+                    Pantalla de 6.1 pulgadas, Super Retina XDR Display.
+                  </p>
+                  <h6>PRECIO $980.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/Motorola edge 20 pro.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Motorola Edge 20</h5>
+                  <p class="card-text">
+                    Celular. Pantalla 6.67 " qOLED FHD+. Procesador: Octa Core
+                    2.0 Ghz. Camara: Principal: 108 MP
+                  </p>
+                  <h6>PRECIO $80.600</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="card">
+                <img
+                  src="../img/motorola g52.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Motorola g52</h5>
+                  <p class="card-text">
+                    Celular de 6.55" pOLED. Procesador Qualcomm Snapdragon 680,
+                    Octa core, 2.4GHz.
+                  </p>
+                  <h6>PRECIO $62.500</h6>
+                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cart4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                      />
+                    </svg>
+                    Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
-  </main>
+    <footer>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 p-3 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.facebook.com" target="_blank">Facebook</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.instagram.com" target="_blank">Instagram</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.youtube.com" target="_blank">YouTube</a>
+          </div>
+        </div>
 
-  <footer>
-    &copy; DERECHOS RESERVADOS PARA MI
-  </footer>
+        <div class="horizontalLine"></div>
 
+        <div class="col-md-6 col-lg-4 p-3 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a target="_blank">Contactos</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <p><strong>Nro. de Telefono:</strong> xxx xxx-xxxx</p>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Trabaja con nosotros</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Terminos y condiciones</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a>Como cuidamos tu privacidad</a>
+          </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-</body>
+        <div class="col-md-6 col-lg-4 p-3 smMdNone footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Trabaja con nosotros</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Terminos y condiciones</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a>Como cuidamos tu privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

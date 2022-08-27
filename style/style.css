@@ -1,38 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Nunito+Sans:wght@200;300&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Oswald:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Kanit&family=Oswald:wght@300&family=Rubik:wght@500&display=swap");
 body {
   margin: 0;
-  height: calc(100% - 4rem - 15rem);
+  height: calc(100% - 4rem - 21rem);
 }
-.headerContainer {
-  background: rgb(86, 58, 180);
-  background: linear-gradient(
-    333deg,
-    rgba(86, 58, 180, 1) 0%,
-    rgba(29, 79, 253, 0.6505952722886029) 57%,
-    rgba(129, 127, 124, 0.5917717428768383) 94%
-  );
+header {
+  height: 6rem;
+  font-family: "Rubik", sans-serif;
+  font-size: large;
 }
 
 .navbar {
-  background: rgb(86, 58, 180);
-  background: linear-gradient(
-    333deg,
-    rgba(86, 58, 180, 1) 0%,
-    rgba(29, 79, 253, 0.6505952722886029) 57%,
-    rgba(129, 127, 124, 0.5917717428768383) 94%
-  );
-  height: 5rem;
+  background-color: rgb(18, 89, 181);
+  z-index: 2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: rgb(209, 209, 209);
 }
 
-.loginContainer > a:hover {
-  background-color: grey;
-  color: black;
-  border-radius: 5px;
-}
-
-.contactoContainer > a:hover {
-  background-color: grey;
-  color: black;
+.buttonContainer > a:hover {
+  background-color: rgb(3, 42, 92);
+  color: rgb(180, 179, 179);
   border-radius: 5px;
 }
 
@@ -122,8 +112,8 @@ div .loginContainer2 {
 }
 
 main {
-  height: calc(100vh - 78.477px - 3.5rem);
   overflow-y: auto;
+  z-index: 1;
 }
 
 .contenedorMain {
@@ -136,7 +126,8 @@ main {
 }
 
 .barraLateral > div > div:first-child {
-  background-color: gray;
+  background-color: rgb(18, 89, 181);
+  font-family: "Arimo", sans-serif;
 }
 
 .inicio {
@@ -146,28 +137,33 @@ main {
 .botonLateral {
   display: inline-block;
   position: fixed;
-  height: calc(100vh - 78.477px - 3.5rem);
+  height: 40rem;
   width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 1rem 1rem 0;
 }
-
+.barraLateral > button:first-child {
+  background-color: rgb(18, 89, 181);
+}
+.barraLateral > button:first-child > p {
+  background-color: rgb(18, 89, 181);
+  color: rgb(209, 209, 209);
+}
+.lateral {
+  background-color: rgb(162, 174, 190);
+}
 .botonLateral p {
   writing-mode: vertical-lr;
   text-align: center;
 }
 
-.linksArticulos a {
-  color: white;
-  font-size: 20px;
-}
-
-.linksArticulos p {
-  color: rgb(35, 34, 34);
-  font-size: 25px;
-  margin: 0;
+.linksArticulos a,
+h2 {
+  color: rgb(46, 46, 46);
+  font-size: 30px;
+  font-family: "Arimo", sans-serif;
 }
 
 .marcas a {
@@ -186,56 +182,66 @@ main {
 }
 
 .card {
-  display: flex;
-  justify-content: space-evenly;
   height: 100%;
+  max-height: 100rem;
   width: 95%;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 1rem;
   box-shadow: 2px 1px 15px -1px #000000;
   background-color: rgb(67, 61, 230);
+  margin-bottom: 2rem;
 }
 
 .card img {
   width: 100%;
-  height: 9rem;
+  height: 30%;
 }
 
 .card-text {
   color: white;
-  font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 2rem;
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  padding: 1rem;
 }
 
 .card-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  font-size: 20px;
+  height: 8rem;
+
   color: white;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 1rem;
 }
 
 .card-body {
-  height: 45%;
+  height: 70%;
+  padding: 0 1rem 1rem 1rem;
 }
 
 h6 {
-  color: yellow;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  color: #f1b500;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
 }
 
 .card button {
   display: flex;
   align-items: center;
   font-size: 16px;
-  background-color: chocolate;
+  background-color: #ffc107;
   padding: 1px 7px 3px 3px;
   border-radius: 2rem;
   cursor: pointer;
-  margin-left: 4rem;
+  font-size: 20px;
+}
+
+.card button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #ffc107;
 }
 
 .barraLateralLg {
@@ -249,35 +255,6 @@ h6 {
 
 .carousel-inner img {
   height: 20rem;
-}
-
-@media (min-width: 768px) {
-  .barraLateral {
-    display: none;
-  }
-
-  .barraLateralLg {
-    display: inline-block;
-    position: fixed;
-    background-color: blue;
-    height: 90vh;
-    width: 22rem;
-    padding: 0 2rem;
-  }
-
-  .productos {
-    margin-left: 24rem;
-  }
-}
-
-@media (min-width: 576px) {
-  .card {
-    display: block;
-  }
-
-  .card img {
-    height: 17rem;
-  }
 }
 
 footer {
@@ -311,11 +288,31 @@ a:hover {
     font-size: large;
     padding-left: 2rem;
   }
+  body {
+    margin: 0;
+    height: calc(100% - 4rem - 15rem);
+  }
   .horizontalLine {
     display: none;
   }
   .smMdNone {
     display: none;
+  }
+  .barraLateral {
+    display: none;
+  }
+
+  .barraLateralLg {
+    display: inline-block;
+    position: fixed;
+    background-color: blue;
+    height: 90vh;
+    width: 22rem;
+    padding: 0 2rem;
+  }
+
+  .productos {
+    margin-left: 20rem;
   }
 }
 
@@ -326,6 +323,10 @@ a:hover {
   }
   footer > div:first-child {
     padding-left: 1rem;
+  }
+  body {
+    margin: 0;
+    height: calc(100% - 4rem - 8.5rem);
   }
   .lgNone {
     display: none;
