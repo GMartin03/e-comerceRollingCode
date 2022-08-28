@@ -1,78 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./../style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-      <header>
-        <nav class="navbar navbar-expand-md navbar-light ">
-            <div class="container-fluid">
-              <a class="navbar-brand text-white" href="#"><img src="../logo/c&vincl.png" alt="logo" height="80px"padding="2rem">Logueate</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <div class="loginContainer">
-                      <a class="nav-link active text-light" aria-current="page" href="../index.html">Menu Principal</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <div class="contactoContainer">
-                      <a class="nav-link text-light" href="./indexContact.html">Quienes somos?</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    <link rel="stylesheet" href="./../style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bgBodyLogin">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"
+            ><img
+              src="../logo/c&vincl.png"
+              alt="logo"
+              height="80px"
+              padding="2rem"
+            />Logueate</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="buttonContainer">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="../index.html"
+                    >Menu Principal</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="buttonContainer">
+                  <a class="nav-link text-light" href="./indexContact.html"
+                    >Quienes somos?</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="pantallaDividida">
       <div class="formContainer">
-        <form class="loginContainer1">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Usuario</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">ingresar</button>
-                <div id="ContrasenaUsuario">Olvidaste tu <a href="">Contraseña</a> o <a href="">registrate</a></div>
-              </div>
-          </form>
-          <hr >
-        </div>
-        <div style="padding: 5rem;">
-            <div class="loginContainer2" class="card" style="width: 18rem">
-              <div class="card-body"><img src="./../logo/google.webp" alt="logoGoogle" height="100px">
-                <h5 class="card-title">Registrate</h5>
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Usuario</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">ingresar</button>
-                  <div id="ContrasenaUsuario">Olvidaste tu <a href="">Contraseña</a> o <a href="">Usuario </a></div>
-                </div>
-              </div>
+        <form class="loginContainer">
+          <div>
+            <div class="userAndPass">
+              <label for="exampleInputEmail" class="form-label">Usuario</label>
+              <input
+                placeholder="Correo electronico"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail"
+                aria-describedby="emailHelp"
+              />
             </div>
+            <div class="userAndPass">
+              <label for="exampleInputPassword" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                placeholder="Contraseña"
+                type="password"
+                class="form-control"
+                id="exampleInputPassword"
+              />
+            </div>
+            <div class="userAndPass">
+              <button type="submit" class="btn btn-primary">ingresar</button>
+              <p>¿Olvidaste tu <a href="./errorPage.html">Contraseña</a>?</p>
+              <a href="./errorPage.html">Registrarse</a>
             </div>
           </div>
-        </main>
-            <footer>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 pt-2 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.facebook.com" target="_blank">Facebook</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.instagram.com" target="_blank">Instagram</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="www.youtube.com" target="_blank">YouTube</a>
+          </div>
+        </div>
+
+        <div class="horizontalLine"></div>
+
+        <div class="col-md-6 col-lg-4 pt-2 footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="./pages/errorPage.html " target="_blank">Contactos</a>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <p><strong>Nro. de Telefono:</strong> xxx xxx-xxxx</p>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Trabaja con nosotros</a
+            >
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Terminos y condiciones</a
+            >
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1 lgNone">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Como cuidamos tu privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 pt-2 smMdNone footerBlock">
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Trabaja con nosotros</a
+            >
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Terminos y condiciones</a
+            >
+          </div>
+          <div class="col-sm-12 col-md-6 mb-1">
+            <a href="./pages/errorPage.html " target="_blank"
+              >Como cuidamos tu privacidad</a
+            >
+          </div>
+        </div>
+      </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

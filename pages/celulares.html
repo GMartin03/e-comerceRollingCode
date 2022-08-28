@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/extraPagesStyle.css" />
   </head>
 
   <body>
@@ -48,18 +48,18 @@
               style="--bs-scroll-height: 100px"
             >
               <li class="nav-item">
-                <div class="loginContainer">
+                <div class="buttonContainer">
                   <a
                     class="nav-link active text-light"
                     aria-current="page"
-                    href="./pages/indexContact.html"
+                    href="./indexContact.html"
                     >Sobre nosotros</a
                   >
                 </div>
               </li>
               <li class="nav-item">
-                <div class="contactoContainer">
-                  <a class="nav-link text-light" href="./pages/indexLogin.html"
+                <div class="buttonContainer">
+                  <a class="nav-link text-light" href="./indexLogin.html"
                     >Iniciar sesion</a
                   >
                 </div>
@@ -78,59 +78,28 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="contenedorMain d-flex justify-content-between">
+      <div class="contenedorMain">
         <div class="barraLateralLg">
-          <h3><a class="inicio" href="../index.html">INICIO</a></h3>
           <div class="linksArticulos">
             <h2>Categorias</h2>
             <ul>
-              <li>
-                <p>Celulares</p>
-              </li>
+              <li><a href="./celulares.html">Celulares</a></li>
               <li><a href="./televisores.html">Televisores</a></li>
-              <li><a href="./electrodomesticos.html">Electrodomesticos</a></li>
-              <li><a href="">Aires acondicionados</a></li>
-              <li><a href="">Notebooks y PCs</a></li>
-              <li><a href="">Herramientas</a></li>
+              <li>
+                <a href="./electrodomesticos.html">Electrodomesticos</a>
+              </li>
+              <li><a href="./errorPage.html">Aires acondicionados</a></li>
+              <li><a href="./errorPage.html">Notebooks y PCs</a></li>
+              <li><a href="./errorPage.html">Herramientas</a></li>
             </ul>
           </div>
-          <form>
-            <div class="marcas d-flex flex-column">
-              <h3>Marcas</h3>
-              <div>
-                <input type="checkbox" id="sansung" />
-                <a href="./samsung.html">Samsung</a>
-              </div>
-              <div>
-                <input type="checkbox" />
-                <a href="./iphone.html">Iphone</a>
-              </div>
-              <div>
-                <input type="checkbox" />
-                <a href="./motorola.html">Motorola</a>
-              </div>
-            </div>
-            <div class="marcas mt-3 d-flex flex-column">
-              <h3>Formas de pago</h3>
-              <div>
-                <input type="checkbox" id="seis" />
-                <a href="./seisCelulares.html">6 cuotas</a>
-              </div>
-              <div>
-                <input type="checkbox" />
-                <a href="./doceCelulares.html">12 cuotas</a>
-              </div>
-            </div>
-            <div class="d-flex mt-5 justify-content-end" role="search">
-              <button class="btn btn-secondary" type="submit">Filtrar</button>
-            </div>
-          </form>
         </div>
 
         <div class="barraLateral">
           <button
-            class="botonLateral btn btn-primary"
+            class="botonLateral btn"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasExample"
@@ -140,15 +109,15 @@
           </button>
 
           <div
-            class="offcanvas offcanvas-start"
+            class="alt offcanvas offcanvas-start"
             tabindex="-1"
             id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel"
           >
             <div class="offcanvas-header">
-              <h3 class="offcanvas-title" id="offcanvasExampleLabel">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                 PRODUCTOS
-              </h3>
+              </h5>
               <button
                 type="button"
                 class="btn-close"
@@ -156,52 +125,24 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="lateral bg-primary offcanvas-body">
-              <h3><a href="../index.html">INICIO</a></h3>
+            <div class="lateral offcanvas-body">
               <div class="linksArticulos">
                 <h2>Categorias</h2>
                 <ul>
+                  <li><a href="./pages/celulares.html">Celulares</a></li>
+                  <li><a href="./pages/televisores.html">Televisores</a></li>
                   <li>
-                    <p>Celulares</p>
+                    <a href="./pages/electrodomesticos.html"
+                      >Electrodomesticos</a
+                    >
                   </li>
-                  <li><a href="./televisores.html">Televisores</a></li>
                   <li>
-                    <a href="./electrodomesticos.html">Electrodomesticos</a>
+                    <a href="./pages/errorPage.html">Aires acondicionados</a>
                   </li>
-                  <li><a href="">Aires acondicionados</a></li>
-                  <li><a href="">Notebooks y PCs</a></li>
-                  <li><a href="">Herramientas</a></li>
+                  <li><a href="./pages/errorPage.html">Notebooks y PCs</a></li>
+                  <li><a href="./pages/errorPage.html">Herramientas</a></li>
                 </ul>
               </div>
-              <div class="marcas d-flex flex-column">
-                <h3>Marcas</h3>
-                <div>
-                  <input type="checkbox" />
-                  <a href="./samsung.html">Sansung</a>
-                </div>
-                <div>
-                  <input type="checkbox" />
-                  <a href="./iphone.html">Iphone</a>
-                </div>
-                <div>
-                  <input type="checkbox" />
-                  <a href="./motorola.html">Motorola</a>
-                </div>
-              </div>
-              <div class="marcas mt-3 d-flex flex-column">
-                <h3>Formas de pago</h3>
-                <div>
-                  <input type="checkbox" />
-                  <a href="">6 cuotas</a>
-                </div>
-                <div>
-                  <input type="checkbox" />
-                  <a href="">12 cuotas</a>
-                </div>
-              </div>
-              <form class="d-flex mt-5 justify-content-end" role="search">
-                <button class="btn btn-secondary" type="submit">Filtrar</button>
-              </form>
             </div>
           </div>
         </div>
@@ -220,26 +161,32 @@
                   <p class="card-text">
                     Celular. Pantalla 6.1" Dynamic AMOLED 2X.
                   </p>
-                  <h6>PRECIO $150.000</h6>
-
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $150.000</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="card">
                 <img src="../img/galaxy z.jpg" class="card-img-top" alt="..." />
@@ -248,25 +195,32 @@
                   <p class="card-text">
                     Celular de 6.7" FHD+ Dynamic Amoled 2x.
                   </p>
-                  <h6>PRECIO $147.125</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $147.125</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="card">
                 <img
@@ -280,22 +234,28 @@
                     El Samsung Galaxy Note 10+ marca la décima generación de la
                     serie flagship de Samsung
                   </p>
-                  <h6>PRECIO $123.989</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $123.989</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,22 +272,28 @@
                   <p class="card-text">
                     Celular 5G de 6.4" FHD+ (1080 x 2408) Super Amoled.
                   </p>
-                  <h6>PRECIO $79.200</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $79.200</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -344,22 +310,28 @@
                   <p class="card-text">
                     La pantalla del iPhone 11 tiene esquinas redondeadas.
                   </p>
-                  <h6>PRECIO $239.600</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $239.600</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -376,22 +348,28 @@
                   <p class="card-text">
                     Pantalla de 6.1 pulgadas, Super Retina XDR Display.
                   </p>
-                  <h6>PRECIO $980.600</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $980.600</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -409,22 +387,28 @@
                     Celular. Pantalla 6.67 " qOLED FHD+. Procesador: Octa Core
                     2.0 Ghz. Camara: Principal: 108 MP
                   </p>
-                  <h6>PRECIO $80.600</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $80.600</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -439,25 +423,31 @@
                 <div class="card-body">
                   <h5 class="card-title">Motorola g52</h5>
                   <p class="card-text">
-                    Celular de 6.55" pOLED. Procesador Qualcomm Snapdragon 680,
+                    Celular de 6.55" OLED. Procesador Qualcomm Snapdragon 680,
                     Octa core, 2.4GHz.
                   </p>
-                  <h6>PRECIO $62.500</h6>
-                  <button class="btn btn-dark" data-bs-toggle="" data-bs-target>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cart4"
-                      viewBox="0 0 16 16"
+                  <div class="d-flex justify-content-around">
+                    <h6>PRECIO $62.500</h6>
+                    <button
+                      class="btn btn-warning"
+                      data-bs-toggle=""
+                      data-bs-target
                     >
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
-                      />
-                    </svg>
-                    Agregar
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                        />
+                      </svg>
+                      Agregar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -470,13 +460,13 @@
       <div class="row">
         <div class="col-md-6 col-lg-4 p-3 footerBlock">
           <div class="col-sm-12 col-md-6 mb-1">
-            <a href="www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
           </div>
           <div class="col-sm-12 col-md-6 mb-1">
-            <a href="www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
           </div>
           <div class="col-sm-12 col-md-6 mb-1">
-            <a href="www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
           </div>
         </div>
 
@@ -484,31 +474,39 @@
 
         <div class="col-md-6 col-lg-4 p-3 footerBlock">
           <div class="col-sm-12 col-md-6 mb-1">
-            <a target="_blank">Contactos</a>
+            <a href="./errorPage.html " target="_blank">Contactos</a>
           </div>
           <div class="col-sm-12 col-md-6 mb-1">
             <p><strong>Nro. de Telefono:</strong> xxx xxx-xxxx</p>
           </div>
           <div class="col-sm-12 col-md-6 mb-1 lgNone">
-            <a>Trabaja con nosotros</a>
+            <a href="./errorPage.html " target="_blank">Trabaja con nosotros</a>
           </div>
           <div class="col-sm-12 col-md-6 mb-1 lgNone">
-            <a>Terminos y condiciones</a>
+            <a href="./errorPage.html  " target="_blank"
+              >Terminos y condiciones</a
+            >
           </div>
           <div class="col-sm-12 col-md-6 mb-1 lgNone">
-            <a>Como cuidamos tu privacidad</a>
+            <a href="./errorPage.html  " target="_blank"
+              >Como cuidamos tu privacidad</a
+            >
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 p-3 smMdNone footerBlock">
           <div class="col-sm-12 col-md-6 mb-1">
-            <a>Trabaja con nosotros</a>
+            <a href="./errorPage.html " target="_blank">Trabaja con nosotros</a>
           </div>
           <div class="col-sm-12 col-md-6 mb-1">
-            <a>Terminos y condiciones</a>
+            <a href="./errorPage.html " target="_blank"
+              >Terminos y condiciones</a
+            >
           </div>
           <div class="col-sm-12 col-md-6 mb-1">
-            <a>Como cuidamos tu privacidad</a>
+            <a href="./errorPage.html " target="_blank"
+              >Como cuidamos tu privacidad</a
+            >
           </div>
         </div>
       </div>
