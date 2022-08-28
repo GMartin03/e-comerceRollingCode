@@ -198,10 +198,10 @@ li a:active {
 
 .card {
   height: 100%;
-  min-height: 40rem;
+  min-height: 45rem;
   max-height: 70rem;
   width: 95%;
-  max-width: 400px;
+  max-width: 22rem;
   border-radius: 1rem;
   box-shadow: 2px 1px 15px -1px #000000;
   background-color: rgb(67, 61, 230);
@@ -210,7 +210,7 @@ li a:active {
 
 .card img {
   width: 100%;
-  height: 30%;
+  height: 40%;
 }
 
 .card-text {
@@ -226,12 +226,13 @@ li a:active {
   -webkit-box-orient: vertical;
   min-height: 15rem;
   max-height: 15rem;
+  margin-bottom: 0.4rem;
 }
 
 .card-title {
   text-align: center;
 
-  height: 8rem;
+  height: 5rem;
   border-bottom: solid rgb(71, 86, 133);
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -245,7 +246,7 @@ li a:active {
 }
 
 .card-body {
-  height: 70%;
+  height: 60%;
   padding: 0 1rem 1rem 1rem;
 }
 
@@ -310,6 +311,7 @@ a:hover {
 .smMdNone {
   display: none;
 }
+
 @media (min-width: 768px) {
   header {
     height: 5rem;
@@ -428,5 +430,14 @@ a:hover {
   }
   .izquierda > h2 {
     padding-bottom: 3rem;
+  }
+  .card img {
+    height: 40%;
+  }
+  .card-body {
+    height: 60%;
+  }
+  .card-text {
+    margin-bottom: 0.4rem;
   }
 }
