@@ -24,7 +24,6 @@ main > div {
 header {
   background-color: #3a5178;
   display: flex;
-  justify-content: end;
   align-items: center;
   height: 3rem;
   margin: 0;
