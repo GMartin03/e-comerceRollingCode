@@ -176,7 +176,7 @@ h2 {
   font-family: "Arimo", sans-serif;
 }
 .marcas > div a {
-  font-size: 30px;
+  font-size: 18px;
   color: rgb(46, 46, 46);
   font-family: "Arimo", sans-serif;
   margin: 1rem 0 1rem 1rem;
@@ -213,6 +213,12 @@ li a:active {
   box-shadow: 2px 1px 15px -1px #000000;
   background-color: rgb(67, 61, 230);
   margin-bottom: 2rem;
+}
+.card:hover {
+  transition: 0.5s;
+  box-shadow: 9px 13px 5px 5px rgba(68, 73, 150, 0.84);
+  -webkit-box-shadow: 9px 13px 5px 5px rgba(68, 73, 150, 0.84);
+  -moz-box-shadow: 9px 13px 5px 5px rgba(68, 73, 150, 0.84);
 }
 
 .card img {
